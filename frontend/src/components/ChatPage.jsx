@@ -20,7 +20,7 @@ const ChatPage = () => {
     const sendMessagehandler = async (receiverId) => { 
         try {
             console.log(textMessage)
-            const res = await axios.post(`http://localhost:8000/api/v1/message/send/${receiverId}`,{textMessage},{
+            const res = await axios.post(`https://instaclone-k0oc.onrender.com/api/v1/message/send/${receiverId}`,{textMessage},{
                 headers:{
                     'Content-Type':'application/json'
                 },
